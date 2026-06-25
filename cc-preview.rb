@@ -5,21 +5,21 @@
 class CcPreview < Formula
   desc "Browse and preview images pasted into Claude Code sessions"
   homepage "https://github.com/Watari995/cc-preview"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/Watari995/cc-preview/releases/download/v0.1.0/cc-preview_darwin_amd64.tar.gz"
-    sha256 "1063633b43f0e8a8974e95018932cad0a45c38de4b50df67d2457693f830ea31"
+    url "https://github.com/Watari995/cc-preview/releases/download/v0.2.0/cc-preview_darwin_amd64.tar.gz"
+    sha256 "813530cf3a695c8e2e91df6ef21bf5b1481f091dc6c483f9d8ed7b722632c1fa"
 
     define_method(:install) do
       bin.install "cc-preview"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/Watari995/cc-preview/releases/download/v0.1.0/cc-preview_darwin_arm64.tar.gz"
-    sha256 "ce78bb0f8d74f44365b749fc816b19797f4fb9b59408f5774dfbe8fa41b70085"
+    url "https://github.com/Watari995/cc-preview/releases/download/v0.2.0/cc-preview_darwin_arm64.tar.gz"
+    sha256 "32f1a498e4856a40445f13e010035d3d63b2f4feba97aebfa3b4e32faa62afc6"
 
     define_method(:install) do
       bin.install "cc-preview"
